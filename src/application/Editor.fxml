@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditorController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="bigMenuItem" mnemonicParsing="false" text="Big Letters" />
+                  <MenuItem fx:id="smallMenuItem" mnemonicParsing="false" text="Small Letters" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="mainTextArea" prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="wordsCountLabel" text="Label" />
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="lettersCountLabel" text="Label" />
+            <Button fx:id="clearButton" mnemonicParsing="false" text="Button" />
+            <Button fx:id="button2" mnemonicParsing="false" text="Button" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
